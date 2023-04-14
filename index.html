@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-800">
+  <main class="flex flex-col items-center justify-center h-screen relative">
+    <div class="container bg-gray-600 sm:max-w-sm h-44 text-center rounded-md p-5 w-2/3 relative min-w-lg">
+      <p id="adviceNumber" class="text-green-400 font-bold">ADVICE #</p>
+      <h1 id="advice" class="text-gray-300 break px-2 break mx-auto break-words mt-1">Click the button to get advice</h1>
+      <div class="lines-container absolute sm:top-32 sm:right-1 top-32 right-1">
+        <img src="./images/pattern-divider-desktop.svg">
+      </div>
+      
+    </div>
+    <div class="dice-div absolute  sm:bottom-52 bottom-52">
+      <button id="generateBtn" class="bg-green-400 rounded-full p-3 h-25 w-25 hover:bg-green-300"><img src="./images/icon-dice.svg" ></button>
+    </div>
+  </main>
+  <script src="advice.js"></script>
+</body>
+</html>
